@@ -13,6 +13,8 @@ import somWebsiteImage from "./Assets/SOM_Website_Logo(1)_1.png";
 import bornToDieImage from "./Assets/image_89.png";
 import { useState } from 'react';
 import diamondImage from "./Assets/diamond.png";
+import gameImage from "./Assets/game.png";
+import cryptoWalletImage from "./Assets/crypto-wallet.png";
 
 
 
@@ -241,34 +243,70 @@ function App() {
          
 
           {/* grid container */}
-          <div>
+          <div className='
+          w-[80%]
+          m-auto
+          mt-[100px]
+          flex justify-center
+          gap-[10px]
+          text-left
+          '>
             {/* card 1 */}
-            <div>
-                <div>
-                  <h1>Elevate Your Gameplay with Essential Insights!</h1>
-                  <p>Unleash Your Potential - Explore the Knowledge Hub Today!</p>
-                  <button>View Docs</button>
+            <div className='border
+            flex 
+            p-[20px]
+            rounded-[32px]
+            box-border
+            w-[50%]
+            bg-gradient-to-tr from-[#9706c7] via-[#020617] to-[#020617]
+            '
+            >
+                <div className='
+                text-left  leading-[25px] '
+                
+                >
+                  <h1 className='text-[24px] font-bold'>Elevate Your Gameplay with Essential Insights!</h1>
+                  <p className='text-[rgba(141, 150, 178, 1)] mt-[15px]'>Unleash Your Potential - Explore the Knowledge Hub Today!</p>
+                  <button className='mt-[40px] bg-white rounded-[20px] text-black py-[8px] px-[14px]'>View Docs</button>
                 </div>
-                <img src="" alt="game image" />
+                <div className='w-[50%]'>
+                  <img src={gameImage} alt="game image" />
+                </div>
             </div>
 
-            {/* card 2 */}
-            <div>
-              <h1>200+</h1>
-              <p>Projects have downloaded & integrated LYNC SDKs</p>
+            <div className='flex gap-[10px]'>
+              <div className='flex flex-col justify-center gap-[20px] '>
+                {/* card 2 */}
+                <div className='
+                border h-[50%] 
+                rounded-[32px]
+                p-[32px]
+                '>
+                  <h1>200+</h1>
+                  <p>Projects have downloaded & integrated LYNC SDKs</p>
+                </div>
+
+                {/* card 3 */}
+                <div className='border h-[50%] rounded-[20px]'>
+                  <h1>8000+</h1>
+                  <p>Contracts have been deployed via LYNC</p>
+                </div>
+              </div>
+                
+
+                {/* card 4 */}
+                <div className='border rounded-[20px]'>
+                  <div>
+                    <h1>50000+</h1>
+                    <p>User ops created in 10 hours</p>
+                  </div>
+                  <div>
+                    <img src={cryptoWalletImage} alt='crypto wallet image' />
+                  </div>
+                </div>
             </div>
 
-            {/* card 3 */}
-            <div>
-            <h1>8000+</h1>
-            <p>Contracts have been deployed via LYNC</p>
-            </div>
-
-            {/* card 4 */}
-            <div>
-            <h1>50000+</h1>
-            <p>User ops created in 10 hours</p>
-            </div>
+            
           </div>
 
           {/* Product suite */}

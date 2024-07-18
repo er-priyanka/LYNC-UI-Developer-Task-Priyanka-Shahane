@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'grid': "url('../src/Assets/Grid.png')",
-        'background': "url('../src/Assets/Background.png')",
+        'background': "url('./Assets/Background.png')",
         'topSection': "url('../src/Assets/BG_Pattern.png')",
       }
     },
