@@ -83,19 +83,35 @@ function App() {
     
     >
       <div
-      className='bg-grid
-      pt-[62px]
-      '
+      className='bg-grid'
       >
-        <Navbar />
-        <TopSection />
-
-        
-        <div>
-          <p className='text-white'>Backed by</p>
+        <div className='
+        bg-[#020617] 
+        opacity-[80%]
+        '>
+          <Navbar />
+          <TopSection />
+     
+          <div>
+          <p className='text-[#DADDD8]
+          text-[24px]
+          '>Backed by</p>
           
           {/* logo container */}
-          <div>
+          <div
+          className='flex
+          w-[40%]
+          m-auto
+          mt-[53px]
+          border
+          border-[rgba(255, 255, 255, 0.21)]
+          rounded-[32px]
+          justify-between
+          items-center
+          bg-[#111426]
+          ' 
+          
+          >
             <div>
               <img src={LongHashX_White_1} alt="logo1" />
             </div>
@@ -108,13 +124,24 @@ function App() {
           </div>
 
           {/* text */}
-          <div>
-            <p>LYNC provides a scalable infrastructure for launching web3 games, without hampering the <span style={{color:'blue'}}>gaming experience.</span> So that you can deliver the next big hit!</p>
+          <div className='
+          w-[54%]
+          align-center
+          m-auto
+          mt-[100px]
+          border-y
+          border-y-slate-300
+          '>
+            <p className='text-[30px] text-white font-bold'>LYNC provides a scalable infrastructure for launching web3 games, without hampering the <span style={{color:'blue'}}>gaming experience.</span> So that you can deliver the next big hit!</p>
           </div>
 
           {/* blockchain heading and some logos*/}
 
-          <div>
+          <div
+          className='        
+          bg-gradient-to-t from-[#020617]  via-[rgba(63,55,201,0.5)] to-[#020617]
+          ' 
+          >
             <h1>Making blockchain gaming accessible to <span>everyone!</span></h1>
             {/* logo container */}
             <div>
@@ -339,6 +366,13 @@ function App() {
 
 
         </div>
+
+
+        </div>
+        
+
+        
+       
       </div>
       
     </div>
