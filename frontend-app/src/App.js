@@ -12,6 +12,7 @@ import lumosImage from "./Assets/image_90.png";
 import somWebsiteImage from "./Assets/SOM_Website_Logo(1)_1.png";
 import bornToDieImage from "./Assets/image_89.png";
 import { useState } from 'react';
+import diamondImage from "./Assets/diamond.png";
 
 
 
@@ -132,24 +133,39 @@ function App() {
           border-y
           border-y-slate-300
           '>
-            <p className='text-[30px] text-white font-bold'>LYNC provides a scalable infrastructure for launching web3 games, without hampering the <span style={{color:'blue'}}>gaming experience.</span> So that you can deliver the next big hit!</p>
+            <p className='text-[30px] text-white font-bold'>LYNC provides a scalable infrastructure for launching web3 games, without hampering the <span className='text-blue-700'>gaming experience.</span> So that you can deliver the next big hit!</p>
           </div>
 
           {/* blockchain heading and some logos*/}
 
           <div
-          className='        
-          bg-gradient-to-t from-[#020617]  via-[rgba(63,55,201,0.5)] to-[#020617]
-          ' 
+          className='
+          w-[80%]
+          m-auto 
+          p-[30px]       
+          '
+          style={{
+            backgroundImage: "radial-gradient(rgba(63,55,201,0.5), rgba(63,55,201,0.3), rgba(63,55,201,0.2), rgba(63,55,201,0), rgba(63,55,201,0) )"
+          }} 
           >
-            <h1>Making blockchain gaming accessible to <span>everyone!</span></h1>
+            <h1 className='
+            text-[40px] 
+            font-bold
+            w-[60%]
+            m-auto
+            my-[50px]
+             '>Making blockchain gaming accessible to <span className='text-blue-700'>everyone!</span></h1>
+           
             {/* logo container */}
-            <div>
+            <div className='
+            flex justify-between items-center
+
+            '>
               <div>
                 <img src={zuroImage} alt="logo1" />
               </div>
               <div>
-                <img src={vrImage} alt="logo2" />
+                <img src={bornToDieImage} alt="logo3" />
               </div>
               <div>
                 <img src={lumosImage} alt="logo3" />
@@ -157,29 +173,72 @@ function App() {
               <div>
                 <img src={somWebsiteImage} alt="logo3" />
               </div>
+              
               <div>
-                <img src={bornToDieImage} alt="logo3" />
+                <img src={vrImage} alt="logo2" />
               </div>
             </div>
           </div>
 
           {/* power heading and description */}
-          <div>
-            <h1>Power Up Your Web3 Game Development, With <span className='text-blue'>LYNC SDKs</span></h1>
-            <p>LYNC SDKs can be easily integrated into game engines like Unity 3D and Unreal Engine in a few clicks.</p>
+          <div className='
+          w-[70%]
+          m-auto
+          '>
+            <h1 className='
+             text-[40px] 
+            font-bold
+            w-[60%]
+            m-auto
+            mt-[50px]
+            '>Power Up Your Web3 Game Development, With <span className='
+            bg-gradient-to-r from-[#FF0276] to-[#7209B7]
+          bg-clip-text text-transparent
+            '>LYNC SDKs</span></h1>
+            <p className='text-[22px] 
+            w-[60%]
+            m-auto
+            '>LYNC SDKs can be easily integrated into game engines like Unity 3D and Unreal Engine in a few clicks.</p>
           </div>
 
           {/* diamond container */}
-          <div>
-            <p>Don't Worry about the <span className='text-blue-700'>Web3</span> Complexities</p>
+          <div className='w-[80%]  m-auto align-left'>
+            <div className='
+              mt-[50px]
+              border
+              border-gray-400
+              rounded-[24px]
+              p-[40px]
+              bg-[#211442]
+              flex
+              justify-between
+              box-border
+              relative
+            '>
+              {/* container 1 */}
+            <div className='w-[70%]  text-left'>
+              <p className='text-[32px] font-bold'>Don't Worry about the <span className='
+              bg-gradient-to-r from-[#FF0276] to-[#7209B7]
+              bg-clip-text text-transparent
+              '>Web3</span> Complexities</p>
 
-            <ul>
-              <li>Save 9-12 months of developement time</li>
-              <li>Focus completely on Game DEv and Mechanics</li>
-              <li>Save Up to $500K+ on Salaries & Smart Contract Auding</li>
-              <li>Go Cross-Chain in a few clicks</li>
-            </ul>
+              <ul className='text-[24px] leading-[52px]'>
+                <li>Save 9-12 months of developement time</li>
+                <li>Focus completely on Game DEv and Mechanics</li>
+                <li>Save Up to $500K+ on Salaries & Smart Contract Auding</li>
+                <li>Go Cross-Chain in a few clicks</li>
+              </ul>
+            </div>
+
+            {/* container 2 */}
+            <div className='w-[30%] h-[100%]  absolute bottom-[0px] right-0'>
+              <img className='object-none' src={diamondImage} alt='diamond image' />
+            </div>
+
+            </div>
+            
           </div>
+         
 
           {/* grid container */}
           <div>
