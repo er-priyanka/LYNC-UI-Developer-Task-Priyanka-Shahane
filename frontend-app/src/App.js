@@ -15,37 +15,37 @@ import { useState } from 'react';
 import diamondImage from "./Assets/diamond.png";
 import gameImage from "./Assets/game.png";
 import cryptoWalletImage from "./Assets/crypto-wallet.png";
-
+import rectangle_24 from "./Assets/Rectangle_24.png";
 
 
 const iniProductSuitData = [
   {
-    image: "",
+    image: rectangle_24,
     title: "LYNC Wallet SDK",
     desc: "Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes."
   },
   {
-    image: "",
+    image: rectangle_24,
     title: "LYNC Wallet SDK",
     desc: "Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes."
   },
   {
-    image: "",
+    image: rectangle_24,
     title: "LYNC Wallet SDK",
     desc: "Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes."
   },
   {
-    image: "",
+    image: rectangle_24,
     title: "LYNC Wallet SDK",
     desc: "Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes."
   },
   {
-    image: "",
+    image: rectangle_24,
     title: "LYNC Wallet SDK",
     desc: "Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes."
   },
   {
-    image: "",
+    image: rectangle_24,
     title: "LYNC Wallet SDK",
     desc: "Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes."
   }
@@ -245,7 +245,7 @@ function App() {
           {/* grid container */}
           <div className='
           w-[80%]
-          m-auto
+          m-auto       
           mt-[100px]
           flex justify-center
           gap-[10px]
@@ -274,31 +274,57 @@ function App() {
                 </div>
             </div>
 
-            <div className='flex gap-[10px]'>
-              <div className='flex flex-col justify-center gap-[20px] '>
+            <div className='flex gap-[10px] w-[50%] box-border'>
+              <div className='flex flex-col box-border justify-between w-[40%]'>
                 {/* card 2 */}
                 <div className='
-                border h-[50%] 
-                rounded-[32px]
-                p-[32px]
+                border min-h-[48%] 
+                rounded-[20px]
+                p-[20px]
                 '>
-                  <h1>200+</h1>
-                  <p>Projects have downloaded & integrated LYNC SDKs</p>
+                  <h1
+                  className='
+                  bg-gradient-to-bl from-[#3F37C9] to-[#4CC9F0]
+                  bg-clip-text
+                  text-transparent
+                  font-extrabold
+                  text-[32px]
+                  w-fit
+                  ' 
+                  >200+</h1>
+                  <p className='text-[#8D96B2]'>Projects have downloaded & integrated LYNC SDKs</p>
                 </div>
 
                 {/* card 3 */}
-                <div className='border h-[50%] rounded-[20px]'>
-                  <h1>8000+</h1>
-                  <p>Contracts have been deployed via LYNC</p>
+                <div className=' min-h-[48%] border rounded-[20px] p-[20px]'>
+                  <h1
+                  className='
+                  bg-gradient-to-br from-[#FF0276] to-[#7209B7]
+                  bg-clip-text
+                  text-transparent
+                  font-extrabold
+                  text-[32px]
+                  w-fit
+                  ' 
+                  >8000+</h1>
+                  <p className='text-[#8D96B2]'>Contracts have been deployed via LYNC</p>
                 </div>
               </div>
                 
 
                 {/* card 4 */}
-                <div className='border rounded-[20px]'>
-                  <div>
-                    <h1>50000+</h1>
-                    <p>User ops created in 10 hours</p>
+                <div className='border w-[65%] rounded-[20px] '>
+                  <div className='p-[20px] box-border'>
+                    <h1
+                    className='
+                    bg-gradient-to-bl from-[#3F37C9] to-[#4CC9F0]
+                    bg-clip-text
+                    text-transparent
+                    font-extrabold
+                    text-[32px]
+                    w-fit'
+                    >50000+</h1>
+                    <p className='text-[#8D96B2]'>User ops created in 10 hours</p>
                   </div>
                   <div>
                     <img src={cryptoWalletImage} alt='crypto wallet image' />
@@ -310,16 +336,43 @@ function App() {
           </div>
 
           {/* Product suite */}
-          <div>
-            <h1>Product <span className='text-blue-700'>Suite</span></h1>
+          <div className='mt-[100px]'
+          style={{
+            backgroundImage: "radial-gradient(rgba(63,55,201,0.5), rgba(63,55,201,0.3), rgba(63,55,201,0.2), rgba(63,55,201,0), rgba(63,55,201,0) )"
+          }}           
+          >
+            <h1 className='
+            text-[40px] 
+            font-bold
+            w-[60%]
+            m-auto
+            
+            '>Product <span className='text-blue-700'>Suite</span></h1>
             {/* grid */}
-            <div>
+            <div
+            className='
+            w-[70%]
+            m-auto
+            mt-[100px]
+            text-left
+            grid
+            grid-cols-3
+            gap-[20px]
+            ' 
+            >
               {
                 productSuitData.map((product, index) => (
-                  <div key={index}>
-                    <img src={product.image} alt={product.title} />
-                    <h1>{product.title}</h1>
-                    <p>{product.desc}</p>
+                  <div key={index}
+                  className='
+                  bg-gradient-to-b from-[rgba(63,55,201,0)] via-[#020617] to-[#020617]
+                  px-[22px]
+                  pb-[45px]
+                  rounded-[20px]
+                  '
+                  >
+                    <img className='w-[100%]' src={product.image} alt={product.title} />
+                    <h1 className='mt-[20px] text-[24px] font-bold'>{product.title}</h1>
+                    <p className='text-[#8D96B2] text-[14px]'>{product.desc}</p>
                   </div>
                 ))
               }
