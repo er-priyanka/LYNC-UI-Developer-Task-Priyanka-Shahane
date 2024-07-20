@@ -16,6 +16,15 @@ import diamondImage from "./Assets/diamond.png";
 import gameImage from "./Assets/game.png";
 import cryptoWalletImage from "./Assets/crypto-wallet.png";
 import rectangle_24 from "./Assets/Rectangle_24.png";
+import etherum from "./Assets/image_69.png";
+import polygon from "./Assets/image_93.png";
+import aptos from "./Assets/image_92.png";
+import zkSky from "./Assets/image_55.png";
+import shardeun from "./Assets/Group_228.png";
+import astar from "./Assets/image_66.png";
+import saga from "./Assets/image_72.png";
+import avalanche from "./Assets/Avalanche_Horizontal_White_2.png";
+import { BsTelegram } from "react-icons/bs";
 
 
 const iniProductSuitData = [
@@ -52,12 +61,14 @@ const iniProductSuitData = [
 ]
 
 const iniLogoData = [
-  {logoImage: ""},
-  {logoImage: ""},
-  {logoImage: ""},
-  {logoImage: ""},
-  {logoImage: ""},
-  {logoImage: ""},
+  {logoImage: etherum },
+  {logoImage: polygon },
+  {logoImage: aptos },
+  {logoImage: zkSky },
+  {logoImage: shardeun },
+  {logoImage: astar },
+  {logoImage: saga },
+  {logoImage: avalanche },
 ];
 
 const iniPartners = [
@@ -248,7 +259,7 @@ function App() {
           m-auto       
           mt-[100px]
           flex justify-center
-          gap-[10px]
+          gap-[16px]
           text-left
           '>
             {/* card 1 */}
@@ -262,7 +273,7 @@ function App() {
             '
             >
                 <div className='
-                text-left  leading-[25px] '
+                text-left  leading-[25px] w-[50%]'
                 
                 >
                   <h1 className='text-[24px] font-bold'>Elevate Your Gameplay with Essential Insights!</h1>
@@ -270,11 +281,11 @@ function App() {
                   <button className='mt-[40px] bg-white rounded-[20px] text-black py-[8px] px-[14px]'>View Docs</button>
                 </div>
                 <div className='w-[50%]'>
-                  <img src={gameImage} alt="game image" />
+                  <img className='object-cover ' src={gameImage} alt="game image" />
                 </div>
             </div>
 
-            <div className='flex gap-[10px] w-[50%] box-border'>
+            <div className='flex gap-[16px] w-[50%] box-border'>
               <div className='flex flex-col box-border justify-between w-[40%]'>
                 {/* card 2 */}
                 <div className='
@@ -380,13 +391,32 @@ function App() {
           </div>
           
           {/* build your favorite chain */}
-          <div>
-            <h1>With LYNC, build on your <span className='text-blue-700'>favorite chain.</span></h1>
-            <div>
+          <div className='
+          
+          w-[80%]
+          m-auto
+          mt-[100px]
+          py-[50px]
+          '
+          style={{
+            backgroundImage: "radial-gradient(rgba(63,55,201,0.5), rgba(63,55,201,0.3), rgba(63,55,201,0.2), rgba(63,55,201,0), rgba(63,55,201,0) )"
+          }} 
+          >
+            <h1
+            className='
+            text-[40px] 
+            font-bold
+            w-[50%]
+            m-auto' 
+            >With LYNC, build on your <span className='text-blue-700'>favorite chain.</span></h1>
+            <div className='
+            grid grid-cols-4
+            mt-[50px]
+            '>
               {
                 logos.map((logo, index) => (
-                  <div key={index}>
-                    <img src={logo.logoImage} alt={`logo ${index+1}`} />
+                  <div className='align-center h-[60px] p-[10px]' key={index}>
+                    <img className=' w-[100%] h-[100%] object-contain' src={logo.logoImage} alt={`logo ${index+1}`} />
                   </div>
                 ))
               }
@@ -394,26 +424,57 @@ function App() {
           </div>
 
           {/* from our blog */}
-          <div>
-            <h1>From our Blog</h1>
-            <p>Level Up Your Web3 Gaming Experience: Explore Our Blog for Insights, Tips, and Innovations in Gaming SDKs!</p>
+          {/* <div> */}
+            {/* <h1>From our Blog</h1>
+            <p>Level Up Your Web3 Gaming Experience: Explore Our Blog for Insights, Tips, and Innovations in Gaming SDKs!</p> */}
 
             {/* carousel */}
             {/* replace this comment with blog carousel */}
-          </div>
+          {/* </div> */}
 
           {/* valuable reviews */}
-          <div>
-            <h1>Valuable <span className='text-blue-700'>Reviews</span></h1>
+          {/* <div> */}
+            {/* <h1>Valuable <span className='text-blue-700'>Reviews</span></h1> */}
             {/* carousel */}
             {/* replace this comment with carousel */}
-          </div>
+          {/* </div> */}
 
           {/* strongest web3 community */}
-          <div>
-            <h1>Strongest Web3</h1>
-            <h1>Community</h1>
-            <button>Join Telegram</button>
+          <div
+          className='
+          w-[80%]
+          m-auto
+          mt-[150px]
+          h-[500px]
+          ' 
+          style={{
+            backgroundImage: "radial-gradient(rgba(63,55,201,0.5), rgba(63,55,201,0.3), rgba(63,55,201,0.2), rgba(63,55,201,0), rgba(63,55,201,0) )"
+          }} 
+          >
+            <div className='h-[100%]
+             bg-community
+             bg-contain bg-center bg-no-repeat
+             flex flex-col justify-center items-center
+             '>
+              <h1 className='
+              text-[40px]
+              font-bold
+              leading-[50px]
+              w-[30%]
+              '>Strongest Web3 <span className='text-blue-800'>Community</span></h1>
+              
+              <div className='flex items-center gap-[10px]
+            bg-gradient-to-r to-[#3F37C9] from-[#4CC9F0] 
+            py-[8px] px-[14px]
+            rounded-[20px]
+            mt-[20px]
+            '>
+              <BsTelegram />
+              <button>Get started</button>
+              
+            </div>
+            </div>
+            
           </div>
 
           {/* our believers and partners */}

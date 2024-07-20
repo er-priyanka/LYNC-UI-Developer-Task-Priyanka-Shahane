@@ -44,7 +44,7 @@ const TopSection = () => {
           className='flex justify-center items-center gap-[20px] mt-[10px]'
           >
             <div className='flex items-center gap-[20px]
-            bg-gradient-to-r to-[#3F37C9] from-[#4CC9F0] 
+            bg-gradient-to-r to-[rgb(63,55,201)] from-[#4CC9F0] 
             py-[5px] px-[10px]
             rounded-[20px]
             '>
