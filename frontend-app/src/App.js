@@ -25,6 +25,12 @@ import astar from "./Assets/image_66.png";
 import saga from "./Assets/image_72.png";
 import avalanche from "./Assets/Avalanche_Horizontal_White_2.png";
 import { BsTelegram } from "react-icons/bs";
+import chainlink from "./Assets/image_58.png";
+import spheron from "./Assets/spheron-white_1.png";
+import biconomy from "./Assets/image_78.png";
+import lighthouse from "./Assets/Group_249.png";
+import image_79 from "./Assets/image_79.png";
+import { BsArrowRight } from "react-icons/bs";
 
 
 const iniProductSuitData = [
@@ -72,14 +78,14 @@ const iniLogoData = [
 ];
 
 const iniPartners = [
-  {image: ""},
-  {image: ""},
-  {image: ""},
-  {image: ""},
-  {image: ""},
-  {image: ""},
-  {image: ""},
-  {image: ""},
+  {image: filecoin},
+  {image: chainlink},
+  {image: spheron},
+  {image: LongHashX_White_1},
+  {image: Axelar_Logo_Full_White_1},
+  {image: biconomy},
+  {image: lighthouse},
+  {image: image_79},
 ]
 
 function App() {
@@ -478,14 +484,36 @@ function App() {
           </div>
 
           {/* our believers and partners */}
-          <div>
-            <h1>Our <span>Believers and Partners</span></h1>
+          <div className='
+          w-[80%]
+          m-auto
+          mt-[200px]
+          '
+          style={{
+            backgroundImage: "radial-gradient(rgba(63,55,201,0.5), rgba(63,55,201,0.3), rgba(63,55,201,0.2), rgba(63,55,201,0), rgba(63,55,201,0) )"
+          }} 
+          >
+            <h1 
+            className='text-[40px] 
+            font-bold
+            w-[60%]
+            m-auto'
+            >Our <span className='
+            bg-gradient-to-bl from-[blue] to-blue-400
+            bg-clip-text text-transparent
+            '>Believers and Partners</span></h1>
             {/* partners grid container */}
-            <div>
+            <div className='
+            mt-[50px]
+            grid grid-cols-4
+            gap-[20px]
+            '>
               {
                 partners.map((item, indx) =>(
-                  <div key={indx}>
-                    <img src={item.image} alt={`image ${indx+1}`} />
+                  <div className='border  border-gray-600 rounded-[20px] p-[20px] px-[10px] bg-rectangleBg bg-no-repeat bg-cover bg-center ' key={indx}>
+                    <img style={{
+                      objectFit:`${indx==0?'cover':'contain'}`
+                    }} className=' w-[70%] h-[50px] m-auto object-fill' src={item.image} alt={`image ${indx+1}`} />
                   </div>
                 ))
               }
@@ -493,21 +521,60 @@ function App() {
            
           </div>
 
-          {/* bottom section */}
-          <div>
-            <h1>Got a game idea?</h1>
-            <h1>Let's ake it big together !!!</h1>
-            <button>Get started</button>
-          </div>
+         
 
           {/* footer */}
-          <div>
-            <div>
+          <div className='
+          
+          mt-[200px] pb-[100px] m-auto relative 
+          '>
+               {/* bottom section */}
+               <div >
+                  <h1
+                  className='
+                  text-[150px] 
+                  font-bold w-fit m-auto
+                  bg-gradient-to-t from-[#020617] to-[#838080]
+                  bg-clip-text text-transparent
+                  ' 
+                  >LYNC</h1>
+                      <div className='
+                      absolute
+                      top-[130px]
+                      left-[35%]
+                      '
+                      style={{
+                        backgroundImage: "radial-gradient(#020617, #020617, rgba(63,55,201, 0), rgba(63,55,201, 0) )"
+                      }}
+                      >
+                        <h1 className='text-[40px] font-bold'>Got a game idea?</h1>
+                        <h1 className='text-[40px] font-bold'>Let's ake it big together !!!</h1>
+                        
+                        <div className='flex items-center gap-[20px]
+                        bg-gradient-to-bl to-[rgb(63,55,201)] from-[#4CC9F0] 
+                        py-[5px] px-[10px]
+                        rounded-[20px]
+                        w-fit m-auto mt-[15px]
+                        '>
+                          <button>Get started</button>
+                          <BsArrowRight />
+                        </div>
+                      </div>
+
+               </div>
+            
+
+
+            <div className='
+             w-[80%] m-auto pt-[200px]
+            bg-Floor_Pattern bg-no-repeat bg-center bg-contain
+            flex justify-between text-left
+            '>
               {/* start */}
               <div>
-                <h1>LYNC</h1>
-                <p>A GameFi Infrastructure</p>
-                <div>
+                <h1 className='text-[32px] text-white font-bold'>LYNC</h1>
+                <p className='text-[16px] font-bold'>A GameFi Infrastructure</p>
+                <div className='flex justify-between items-center'>
                   <img src="" alt="linked in" />
                   <img src="" alt="discord" />
                   <img src="" alt="twitter" />
@@ -515,38 +582,57 @@ function App() {
               </div>
 
               {/* middle */}
-              <div>
+              <div className='flex gap-[20px]'>
                 <div>
-                  <p>Product</p>
-                  <ul>
+                  <p className='font-bold text-[18px]'>Product</p>
+                  <ul className='leading-8 text-[14px]'>
                     <li>
                       <a href="">SDK's</a>
+                    </li>
+                    <li>                      
                       <a href="">Transfer API's</a>
+                    </li>
+                    <li>
                       <a href="">Token API's</a>
+                    </li>
+                    <li>
                       <a href="">NFT API's</a>
                     </li>
+                    
                   </ul>
                 </div>
 
-                <div>
-                  <p>Company</p>
-                  <ul>
+                <div >
+                  <p className='font-bold text-[18px]'>Company</p>
+                  <ul className='leading-8 text-[14px]'>
                     <li>
                       <a href="">About us</a>
+                    </li>
+                    <li>
                       <a href="">Press Kit</a>
+                    </li>
+                    <li>
                       <a href="">Security</a>
+                    </li>
+                    <li>
                       <a href="">Privacy Policy</a>
                     </li>
                   </ul>
                 </div>
 
                 <div>
-                  <p>Contact</p>
-                  <ul>
+                  <p className='font-bold text-[18px]'>Contact</p>
+                  <ul className='leading-8 text-[14px]'>
                     <li>
                       <a href="">Email</a>
+                    </li>
+                    <li>
                       <a href="">Discord</a>
+                    </li>
+                    <li>
                       <a href="">Telegram</a>
+                    </li>
+                    <li>
                       <a href="">Press</a>
                     </li>
                   </ul>
@@ -555,16 +641,28 @@ function App() {
 
               {/* end */}
               <div>
-                <h1>Suprechange your inbox</h1>
-                <p>Sign up for our newsletter</p>
-                <div>
-                  <input placeholder='enter your email address' />
-                  <button>Submit</button>
+                <h1 className='text-[20px] font-bold '>Suprechange your inbox</h1>
+                <p className='text-[14px]'>Sign up for our newsletter</p>
+                <div className='border border-gray-500 rounded-[20px] mt-[15px] px-[10px]'>
+                  <input className='p-[10px] bg-transparent placeholder:text-[14px]' placeholder='enter your email address' />
+                  <button className='
+                  py-[5px] px-[30px] 
+                  text-[14px]
+                  rounded-[20px]
+                  bg-gradient-to-tr from-blue-400 to-blue-800
+                  '>Submit</button>
                 </div>
               </div>
             </div>
-
-            <p>2024 LYNC World <a href="">Terms of service</a></p>
+            
+            <div className='flex justify-center items-center gap-[10px] mt-[50px]'>
+              <p className='text-[14px] '>2024 LYNC World</p>
+              <ul className='list-disc list-inside'>
+                <li>
+                  <a className='underline underline-offset-2' href="">Terms of service</a>
+                </li>
+              </ul>
+            </div>
           </div>
          
 

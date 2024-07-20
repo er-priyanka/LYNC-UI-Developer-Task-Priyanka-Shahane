@@ -10,6 +10,8 @@ module.exports = {
         'background': "url('./Assets/Background.png')",
         'topSection': "url('../src/Assets/BG_Pattern.png')",
         'community': "url('../src/Assets/image_99.png')",
+        'rectangleBg': "url('../src/Assets/Rectangle_20.png')",
+        'Floor_Pattern': "url('../src/Assets/Floor_Pattern.png')"
       }
     },
   },
