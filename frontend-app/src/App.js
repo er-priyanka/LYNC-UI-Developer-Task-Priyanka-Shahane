@@ -387,6 +387,10 @@ function App() {
             text-left
             grid
             grid-cols-3
+            lg:grid-cols-3
+            md:grid-cols-2
+            sm:grid-cols-1
+
             gap-[20px]
             ' 
             >
@@ -430,7 +434,7 @@ function App() {
             m-auto' 
             >With LYNC, build on your <span className='text-blue-700'>favorite chain.</span></h1>
             <div className='
-            grid grid-cols-4
+            grid grid-cols-2 md:grid-cols-4 sm:grid-cols-2
             mt-[50px]
             '>
               {
@@ -521,7 +525,7 @@ function App() {
             {/* partners grid container */}
             <div className='
             mt-[50px]
-            grid grid-cols-4
+            grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2
             gap-[20px]
             '>
               {
@@ -584,9 +588,18 @@ function App() {
             <div className='
              w-[80%] m-auto pt-[200px]
             bg-Floor_Pattern bg-no-repeat bg-center bg-contain
-            flex justify-between text-left
+            flex flex-col lg:flex-row gap-[20px]
+             justify-between text-left
+             
             '>
-              {/* start */}
+              <div 
+              className=' w-[100%]
+              lg:w-[60%] 
+              flex flex-col lg:flex-row gap-[20px]
+              justify-between text-left
+              '
+              >
+                {/* start */}
               <div>
                 <h1 className='text-[32px] text-white font-bold'>LYNC</h1>
                 <p className='text-[16px] font-bold'>A GameFi Infrastructure</p>
@@ -655,8 +668,11 @@ function App() {
                 </div>
               </div>
 
+              </div>
+              
+
               {/* end */}
-              <div>
+              <div className='w-[100%] text-center lg:text-left lg:w-[30%]'>
                 <h1 className='text-[20px] font-bold '>Suprechange your inbox</h1>
                 <p className='text-[14px]'>Sign up for our newsletter</p>
                 <div className='border border-gray-500 rounded-[20px] mt-[15px] px-[10px]'>
