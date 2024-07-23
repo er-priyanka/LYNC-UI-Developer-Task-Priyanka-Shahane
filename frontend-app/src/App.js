@@ -33,6 +33,7 @@ import image_79 from "./Assets/image_79.png";
 import { BsArrowRight } from "react-icons/bs";
 import gameGif from "./Assets/game-animation.gif";
 import animation from "./Assets/Animation.gif";
+import { FaLinkedin, FaDiscord, FaTwitter } from "react-icons/fa";
 
 
 const iniProductSuitData = [
@@ -595,18 +596,25 @@ function App() {
               <div 
               className=' w-[100%]
               lg:w-[60%] 
-              flex flex-col lg:flex-row gap-[20px]
+              flex flex-col md:flex-row gap-[20px]
               justify-between text-left
               '
               >
                 {/* start */}
-              <div>
+              <div >
                 <h1 className='text-[32px] text-white font-bold'>LYNC</h1>
                 <p className='text-[16px] font-bold'>A GameFi Infrastructure</p>
-                <div className='flex justify-between items-center'>
-                  <img src="" alt="linked in" />
-                  <img src="" alt="discord" />
-                  <img src="" alt="twitter" />
+                <div className=' mt-[10px] flex gap-[8px] items-center'>
+                  <div className='border border-gray-600 rounded-[50%] p-[8px]'>
+                    <FaLinkedin />
+                  </div>
+                  <div className='border border-gray-600 rounded-[50%] p-[8px]'>
+                    <FaDiscord />                 
+                  </div>
+                  <div className='border border-gray-600 rounded-[50%] p-[8px]'>
+                    <FaTwitter />                
+                  </div>
+                 
                 </div>
               </div>
 
@@ -675,10 +683,10 @@ function App() {
               <div className='w-[100%] text-center lg:text-left lg:w-[30%]'>
                 <h1 className='text-[20px] font-bold '>Suprechange your inbox</h1>
                 <p className='text-[14px]'>Sign up for our newsletter</p>
-                <div className='border border-gray-500 rounded-[20px] mt-[15px] px-[10px]'>
-                  <input className='p-[10px] bg-transparent placeholder:text-[14px]' placeholder='enter your email address' />
+                <div className='border w-fit border-gray-500 rounded-[20px] mt-[15px] pr-[10px] '>
+                  <input className=' p-[10px] bg-transparent placeholder:text-[14px]' placeholder='enter your email address' />
                   <button className='
-                  py-[5px] px-[30px] 
+                  py-[5px] px-[30px]
                   text-[14px]
                   rounded-[20px]
                   bg-gradient-to-tr from-blue-400 to-blue-800
