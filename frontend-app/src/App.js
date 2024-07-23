@@ -31,6 +31,8 @@ import biconomy from "./Assets/image_78.png";
 import lighthouse from "./Assets/Group_249.png";
 import image_79 from "./Assets/image_79.png";
 import { BsArrowRight } from "react-icons/bs";
+import gameGif from "./Assets/game-animation.gif";
+import animation from "./Assets/Animation.gif";
 
 
 const iniProductSuitData = [
@@ -152,7 +154,7 @@ function App() {
           border-y
           border-y-slate-300
           '>
-            <p className='text-[30px] text-white font-bold'>LYNC provides a scalable infrastructure for launching web3 games, without hampering the <span className='text-blue-700'>gaming experience.</span> So that you can deliver the next big hit!</p>
+            <p className= 'text-[30px] lg:text-[30px] md:text-[24px] sm:text-[18px] text-white font-bold'>LYNC provides a scalable infrastructure for launching web3 games, without hampering the <span className='text-blue-700'>gaming experience.</span> So that you can deliver the next big hit!</p>
           </div>
 
           {/* blockchain heading and some logos*/}
@@ -169,6 +171,7 @@ function App() {
           >
             <h1 className='
             text-[40px] 
+            lg:text-[40px] md:text-[32px] sm:text-[24px]
             font-bold
             w-[60%]
             m-auto
@@ -205,7 +208,8 @@ function App() {
           m-auto
           '>
             <h1 className='
-             text-[40px] 
+             text-[40px]
+             lg:text-[40px] md:text-[32px] sm:text-[24px] 
             font-bold
             w-[60%]
             m-auto
@@ -250,7 +254,7 @@ function App() {
             </div>
 
             {/* container 2 */}
-            <div className='w-[30%] h-[100%]  absolute bottom-[0px] right-0'>
+            <div className='w-[30%] md:block sm:hidden h-[100%]  absolute bottom-[0px] right-0'>
               <img className='object-none' src={diamondImage} alt='diamond image' />
             </div>
 
@@ -264,22 +268,24 @@ function App() {
           w-[80%]
           m-auto       
           mt-[100px]
-          flex justify-center
+          flex flex-col sm:flex-col lg:flex-row
+          justify-center 
           gap-[16px]
           text-left
           '>
             {/* card 1 */}
-            <div className='border
+            <div className='border border-gray-500
             flex 
             p-[20px]
             rounded-[32px]
             box-border
-            w-[50%]
+            w-[100%]
+            lg:w-[50%] sm:w-[100%]
             bg-gradient-to-tr from-[#9706c7] via-[#020617] to-[#020617]
             '
             >
                 <div className='
-                text-left  leading-[25px] w-[50%]'
+                text-left  leading-[30px] w-[50%]'
                 
                 >
                   <h1 className='text-[24px] font-bold'>Elevate Your Gameplay with Essential Insights!</h1>
@@ -287,15 +293,21 @@ function App() {
                   <button className='mt-[40px] bg-white rounded-[20px] text-black py-[8px] px-[14px]'>View Docs</button>
                 </div>
                 <div className='w-[50%]'>
-                  <img className='object-cover ' src={gameImage} alt="game image" />
+                  <img className='object-cover ' src="https://s3-alpha-sig.figma.com/img/efc2/0bf1/269ff51dfea508b952adde5a5602a36c?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nmVeb1qCcm3i6~-eQAJowradzE3EeQgW0xXzv9gA0nbe2NYUA3qlcL7A7o1xnPstL1M5sEIIFJBA0lnFt15L7wvAiWchMYI7lqK622eLyl0rObQvvEk47pCULVjqZaem92rYFzsooW7aN1EByidr05eWuDdgDXV7VpcJcsD7B3Cw~N-u~SI2ajpzYOL8NkU7VTH50sqJeXc4FzXvJofnNaJLSSdUzvGWohvutjrxZIssmpjLNElfrKJ3adPEbiOCLBXMf6-cO1T4Sy5mRnnmVKh1FhR9E-KGfgxlkv5slLIAVtKmqGDXK0JTKW8KIEXj-R8nhuMFJ8YWO0D1nC1vTw__" alt="game image" />
                 </div>
             </div>
 
-            <div className='flex gap-[16px] w-[50%] box-border'>
-              <div className='flex flex-col box-border justify-between w-[40%]'>
+            <div className='flex flex-col md:flex-row 
+            gap-[16px] w-[100%] lg:w-[50%] sm:w-[100%]
+            box-border'>
+              <div className='flex flex-col
+              box-border justify-between 
+              lg:w-[40%] md:w-[40%] w-[100%]
+              gap-[20px]
+              '>
                 {/* card 2 */}
                 <div className='
-                border min-h-[48%] 
+                border border-gray-500 min-h-[48%] 
                 rounded-[20px]
                 p-[20px]
                 '>
@@ -313,7 +325,7 @@ function App() {
                 </div>
 
                 {/* card 3 */}
-                <div className=' min-h-[48%] border rounded-[20px] p-[20px]'>
+                <div className=' min-h-[48%] border border-gray-500 rounded-[20px] p-[20px]'>
                   <h1
                   className='
                   bg-gradient-to-br from-[#FF0276] to-[#7209B7]
@@ -330,7 +342,7 @@ function App() {
                 
 
                 {/* card 4 */}
-                <div className='border w-[65%] rounded-[20px] '>
+                <div className='border border-gray-500 w-[100%] md:w-[65%] rounded-[20px] '>
                   <div className='p-[20px] box-border'>
                     <h1
                     className='
@@ -344,7 +356,7 @@ function App() {
                     <p className='text-[#8D96B2]'>User ops created in 10 hours</p>
                   </div>
                   <div>
-                    <img src={cryptoWalletImage} alt='crypto wallet image' />
+                    <img className='w-[100%] max-h-[300px] object-contain' src={animation} alt='crypto wallet image' />
                   </div>
                 </div>
             </div>
@@ -360,6 +372,7 @@ function App() {
           >
             <h1 className='
             text-[40px] 
+            lg:text-[40px] md:text-[32px] sm:text-[24px]
             font-bold
             w-[60%]
             m-auto
@@ -410,7 +423,8 @@ function App() {
           >
             <h1
             className='
-            text-[40px] 
+            text-[40px]
+            lg:text-[40px] md:text-[32px] sm:text-[24px] 
             font-bold
             w-[50%]
             m-auto' 
@@ -464,6 +478,7 @@ function App() {
              '>
               <h1 className='
               text-[40px]
+              lg:text-[40px] md:text-[32px] sm:text-[24px]
               font-bold
               leading-[50px]
               w-[30%]
@@ -495,6 +510,7 @@ function App() {
           >
             <h1 
             className='text-[40px] 
+            lg:text-[40px] md:text-[32px] sm:text-[24px]
             font-bold
             w-[60%]
             m-auto'
@@ -547,8 +563,8 @@ function App() {
                         backgroundImage: "radial-gradient(#020617, #020617, rgba(63,55,201, 0), rgba(63,55,201, 0) )"
                       }}
                       >
-                        <h1 className='text-[40px] font-bold'>Got a game idea?</h1>
-                        <h1 className='text-[40px] font-bold'>Let's ake it big together !!!</h1>
+                        <h1 className='text-[40px] lg:text-[40px] md:text-[32px] sm:text-[24px] font-bold'>Got a game idea?</h1>
+                        <h1 className='text-[40px] lg:text-[40px] md:text-[32px] sm:text-[24px] font-bold'>Let's ake it big together !!!</h1>
                         
                         <div className='flex items-center gap-[20px]
                         bg-gradient-to-bl to-[rgb(63,55,201)] from-[#4CC9F0] 
