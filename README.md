@@ -11,7 +11,7 @@ This is frontend app in which you can give user experience
 1. Clone the repository.
    ```bash
    git clone https://github.com/er-priyanka/LYNC-UI-Developer-Task-Priyanka-Shahane.git
-   cd antichess
+   cd frontend-app
 
 2. Install dependencies.
     ```bash
